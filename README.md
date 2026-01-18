@@ -21,3 +21,22 @@ StarterGui
     │  └─ LocalScript
     └─ TextButton (Pulo)
        └─ LocalScript
+
+
+
+
+	   -- MIRANDA HUB LOADER (LEGAL)
+
+local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local humanoid = char:WaitForChild("Humanoid")
+
+-- CONFIG
+local SPEED = 32
+local JUMP = 100
+
+-- EXECUTA AUTOMATICO
+humanoid.WalkSpeed = SPEED
+humanoid.JumpPower = JUMP
+
+print("HUB UNIVERSAL")
